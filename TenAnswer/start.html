@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="startStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body onload="startGame()">
+  <div class="screen">
+    <!-- --- PopUp --- -->
+      <div class="popup-hidden" id="popUp">
+        <div class="overlay">
+          <div class="overlay-header-win" id="overlayHeader"> <!-- change -->
+            <h3>Answer</h3>
+          </div>
+          <div class="overlay-body">
+            <div class="overlay-answer">
+              <span class="answer-win" id="displayAnswer"></span>
+            </div>
+            <div class="overlay-text">
+              <h2 id="cheerText"></h2>
+              <h1 class="overlay-text-win" id="overlayText"></h1>
+            </div>
+            <div class="overlay-nav">
+              <div class="shadow">
+                <div class="reset-button" onclick="restartGame()" id="resetButton">
+                  <h3>Play again?</h3>
+                </div>
+              </div>
+              <div class="shadow2">
+                <div class="home2-button" onclick="returnHome()" id="home2Button">
+                  <h3>Home</h3>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- --- ----- --- -->
+
+    <div class="header">
+      <div class="home-button" onclick="returnHome()">
+        <h2>Home</h2>
+        <img class="home-img" src="img/home-icon-silhouette.png" alt="">
+      </div>
+      <div class="restart-button" onclick="restartGame()">
+        <h2>Restart</h2>
+        <img class="restart-img" src="img/restart.png" alt="">
+      </div>
+    </div>
+    <div class="mode">
+      <div class="mode-box">
+        <div class="mode-box-header">
+          <h2>Guess between 0 - 99</h2>
+        </div>
+        <div class="mode-box-body">
+          <div class="heart">
+            <div class="hp-section" id="hpContainer">
+              
+            </div>
+            <div class="hint">
+              <h5 id="hintText"></h5>
+            </div>  
+          </div>
+          <div class="question-mark">
+            <h1 id="answer">?</h1>
+          </div>
+          <div class="display-log" id="displayLog">
+            <div class="content" id="content"></div>
+          </div>
+          <div class="input-section">
+            <input type="text" placeholder="Enter Number" class="input-bar" id="playerInput"></input>
+            <div class="enter-button" onclick="addLog()" id="enterButton">
+              <h3>Enter</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
