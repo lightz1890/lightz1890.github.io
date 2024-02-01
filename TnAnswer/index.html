@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuessIt</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="screen">
+
+    <div class="popup-hidden" id="popUp">
+      <div class="overlay">
+        <div class="overlay-header">
+          <h1>How to play?</h1>
+        </div>
+        <div class="overlay-body">
+          <p>&nbsp&nbsp&nbsp The "Ten Answer" is a simple yet
+          engaging number guessing game
+          where the player has to <span style="color: #FDDF5F;">guess</span> a randomly
+          generated number between 1 and 100
+          within determined attempts.</p>
+          <div class="buttom-part">
+            <h1>What is the different in difficulty?</h1>
+            <p>&nbsp&nbsp&nbsp In <span style="color: #2c9947;">EASY</span> You will have 10 chances to
+            guess and be able to see <span style="color: #FDDF5F;">HINT</span>.</p>
+            <p>&nbsp&nbsp&nbsp In <span style="color: #D73E2C;">HARD</span> You will have 5 chances to
+            guess and not be able to see the <span style="color: #FDDF5F;">HINT</span>.</p>
+          </div>
+          <div class="close-section">
+            <div class="close-button" onclick="closePopUp()">
+              <h3>Close</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------- -->
+    <div class="title">
+      <h1 class="title-text">Guess It</h1>
+      <h5>TenAnswer</h5>
+    </div>
+    <div class="mode">
+      <div class="mode-box">
+        <div class="mode-box-header">
+          <h1>Select a mode</h1>
+        </div>
+        <div class="mode-box-body">
+          <div class="mode-button-easy" onclick="easyMode()">
+            <h1>Easy</h1>
+          </div>
+          <div class="mode-button-normal" onclick="normalMode()">
+            <h1>Normal</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="additional">
+      <div class="made-by">
+        <h3>made by</h3>
+        <h4>Pitchaya Piyakrit Kittipat</h4>
+      </div>
+      <div class="about-button" onclick="openPopUp()">
+        <img class="question-mark-img" src="img/question-mark.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
